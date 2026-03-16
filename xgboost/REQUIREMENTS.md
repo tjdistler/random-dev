@@ -109,16 +109,20 @@ Run `validate.py` after completing both files:
 python3 validate.py
 ```
 
-It checks 8 things across two parts:
+It checks 15 things across two parts:
 
-**Part 1 — train.py (6 checks):**
-- `model.json` exists and loads as a valid `xgb.Booster`
+**Part 1 — train.py (8 checks):**
+- `model.json` exists
+- `model.json` loads as a valid `xgb.Booster`
 - Model was trained on the correct 9 features
 - Model predicts both classes (not degenerate)
 - Training accuracy ≥ 85%
-- Test accuracy ≥ 70%, precision ≥ 0.60, recall ≥ 0.60
+- Test accuracy ≥ 70%
+- Test recall ≥ 0.60
+- Test precision ≥ 0.60
 
-**Part 2 — evaluate.py (5 checks):**
+**Part 2 — evaluate.py (7 checks):**
+- `evaluate.py` exists
 - Runs without error
 - Prints numeric output
 - Output mentions: `accuracy`, `precision`, `recall`, `confusion`

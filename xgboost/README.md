@@ -87,7 +87,7 @@ Open `evaluate.py` and follow the numbered comments. You need to:
 python3 validate.py
 ```
 
-Runs 11 checks across both files — model correctness, metric thresholds, and output format. Each failed check includes a hint. Aim for all 11 passing.
+Runs 15 checks across both files — model correctness, metric thresholds, and output format. Each failed check includes a hint. Aim for all 15 passing.
 
 ---
 
